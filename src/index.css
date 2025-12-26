@@ -14,7 +14,7 @@ html {
 body {
   min-width: 320px;
   min-height: 100vh;
-  overflow: hidden;
+  overflow: auto;
 }
 
 /* Theme classes */
@@ -23,7 +23,19 @@ body {
 }
 
 .light-theme {
-  @apply bg-slate-100 text-stone-950;
+  @apply bg-slate-50 text-stone-950;
+}
+
+@media print {
+  body {
+    background: white !important;
+  }
+  nav,
+  footer,
+  button,
+  ion-icon {
+    display: none !important;
+  }
 }
 
 /* 

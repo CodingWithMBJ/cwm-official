@@ -17,7 +17,7 @@ export const projects = [
         icon: "",
       },
     ],
-    previewImg: "https://thenounproject.com/icon/placeholder-image-261694/",
+    previewImg: "https://placehold.co/600x400",
   },
   {
     id: 2,
@@ -37,7 +37,7 @@ export const projects = [
         icon: "logo-github",
       },
     ],
-    previewImg: "https://thenounproject.com/icon/placeholder-image-261694/",
+    previewImg: "https://placehold.co/600x400",
   },
   {
     id: 3,
@@ -57,6 +57,6 @@ export const projects = [
         icon: "",
       },
     ],
-    previewImg: "https://thenounproject.com/icon/placeholder-image-261694/",
+    previewImg: "https://placehold.co/600x400",
   },
 ];
