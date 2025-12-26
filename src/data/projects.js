@@ -1,62 +1,36 @@
+import fakestore from "../assets/fakestore-products.png";
+import apiDashboard from "../assets/api dashboard.png";
+import eventCenter from "../assets/event-center-site.png";
+
 export const projects = [
   {
     id: 1,
-    title: "DevBlog Platform",
-    description:
-      "A full-stack blogging platform where developers can write, edit, and publish technical articles.",
-    tech: ["React", "Node.js", "Express", "MongoDB"],
-    previewLink: [
-      {
-        link: "",
-        icon: "",
-      },
-    ],
-    sourceCode: [
-      {
-        link: "",
-        icon: "",
-      },
-    ],
-    previewImg: "https://placehold.co/600x400",
+    title: "FakeStore App",
+    description: "App that allows users to browse and add products to a store.",
+    tech: ["React", "Bootstrap", "Vite", "REST API"],
+    liveUrl: "https://fakestore-app-mocha.vercel.app/",
+    repoUrl: "https://github.com/CodingWithMBJ/fakestore-app",
+    previewImg: fakestore,
+    year: "2025",
   },
   {
     id: 2,
-    title: "E-Commerce Storefront",
-    description:
-      "Responsive online store with product filtering, shopping cart, and checkout flow.",
-    tech: ["React", "TypeScript", "Tailwind CSS", "Stripe (conceptual)"],
-    previewLink: [
-      {
-        link: "",
-        icon: "",
-      },
-    ],
-    sourceCode: [
-      {
-        link: "",
-        icon: "logo-github",
-      },
-    ],
-    previewImg: "https://placehold.co/600x400",
+    title: "API Dashboard",
+    description: "Multi API Dashboard",
+    tech: ["HTML", "CSS", "JS"],
+    liveUrl: "https://nimble-crisp-730502.netlify.app/",
+    repoUrl: "https://github.com/CodingWithMBJ/api-dashboard",
+    previewImg: apiDashboard,
+    year: "2025",
   },
   {
     id: 3,
-    title: "Portfolio v2",
-    description:
-      "A modern animated portfolio site to showcase full-stack projects and blogs.",
-    tech: ["Vite", "React", "Framer Motion"],
-    previewLink: [
-      {
-        link: "",
-        icon: "",
-      },
-    ],
-    sourceCode: [
-      {
-        link: "",
-        icon: "",
-      },
-    ],
-    previewImg: "https://placehold.co/600x400",
+    title: "Event-Center",
+    description: "Event Center Site",
+    tech: ["HTML", "CSS", "JS"],
+    liveUrl: "https://event-center-site.netlify.app/",
+    repoUrl: "https://github.com/CodingWithMBJ/Event-Center-Website",
+    previewImg: eventCenter,
+    year: "2025",
   },
 ];

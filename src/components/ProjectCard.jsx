@@ -1,5 +1,8 @@
 import React from "react";
 import { projects } from "../data/projects";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 function ProjectCard({ darkTheme, limit }) {
   const textMain = darkTheme ? "text-stone-100" : "text-stone-900";
@@ -78,48 +81,55 @@ function ProjectCard({ darkTheme, limit }) {
               ) : null}
 
               {/* Links (optional) */}
-              <div className="mt-5 flex items-center gap-3">
-                {project.liveUrl ? (
+              <div className="mt-5 flex items-center gap-4">
+                {project.liveUrl && (
                   <a
                     href={project.liveUrl}
                     target="_blank"
                     rel="noreferrer"
+                    aria-label="Live site"
                     className={`
-                      text-sm font-medium underline underline-offset-4
-                      ${
-                        darkTheme
-                          ? "text-sky-300 hover:text-sky-200"
-                          : "text-sky-700 hover:text-sky-600"
-                      }
-                    `}
+        p-2 rounded-full transition-all
+        hover:scale-110
+        ${
+          darkTheme
+            ? "text-sky-300 hover:text-sky-200"
+            : "text-sky-700 hover:text-sky-600"
+        }
+      `}
                   >
-                    Live
+                    <FontAwesomeIcon
+                      icon={faArrowUpRightFromSquare}
+                      className="text-lg"
+                    />
                   </a>
-                ) : null}
+                )}
 
-                {project.repoUrl ? (
+                {project.repoUrl && (
                   <a
                     href={project.repoUrl}
                     target="_blank"
                     rel="noreferrer"
+                    aria-label="Source code"
                     className={`
-                      text-sm font-medium underline underline-offset-4
-                      ${
-                        darkTheme
-                          ? "text-stone-300 hover:text-stone-200"
-                          : "text-stone-700 hover:text-stone-900"
-                      }
-                    `}
+        p-2 rounded-full transition-all
+        hover:scale-110
+        ${
+          darkTheme
+            ? "text-stone-300 hover:text-stone-100"
+            : "text-stone-700 hover:text-stone-900"
+        }
+      `}
                   >
-                    Code
+                    <FontAwesomeIcon icon={faGithub} className="text-lg" />
                   </a>
-                ) : null}
+                )}
 
-                {project.liveUrl || project.repoUrl ? (
+                {(project.liveUrl || project.repoUrl) && (
                   <span className={`ml-auto text-xs ${textMuted}`}>
-                    {project.year || ""}
+                    {project.year}
                   </span>
-                ) : null}
+                )}
               </div>
             </div>
           </div>

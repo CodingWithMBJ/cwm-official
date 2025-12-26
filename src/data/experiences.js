@@ -4,10 +4,10 @@ export const experience = [
   {
     id: "ttm-2024",
     company: "The Two Migrations",
-    title: "Full Stack Developer",
+    title: "Full-Stack Developer",
     employmentType: "Full-time",
     location: "United States",
-    locationType: "On-site", // LinkedIn shows United States (not Remote/Hybrid). Change if needed.
+    locationType: "On-Site", // LinkedIn shows United States (not Remote/Hybrid). Change if needed.
 
     start: { month: "Sep", year: 2024 },
     end: null,
