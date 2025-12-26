@@ -36,7 +36,7 @@ export const skills = [
     id: 4,
     category: "Accessibility & Performance",
     items: [
-      "Accessibility (a11y)",
+      "Accessibility",
       "Semantic HTML",
       "Keyboard Navigation",
       "ARIA Basics",
