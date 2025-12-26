@@ -125,7 +125,7 @@ function Hero({ darkTheme }) {
 
                 <span
                   className={`
-                    text-xs px-2 py-1 rounded-full border
+                    text-xs px-2 py-1 rounded-full border hover:text-sky-800 cursor-pointer
                     ${
                       darkTheme
                         ? "border-white/10 text-stone-300 bg-white/5"
@@ -256,7 +256,7 @@ function Hero({ darkTheme }) {
               </Link>
 
               <Link
-                to="/contact"
+                to="#contact"
                 className={`
                   px-5 py-2.5 rounded-xl text-sm font-medium
                   transition-all duration-300
